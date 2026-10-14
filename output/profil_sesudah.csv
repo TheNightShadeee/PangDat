@@ -1,0 +1,56 @@
+﻿tahap,tabel,kolom,baris,jumlah_null,persen_null,jumlah_unik,min,max,contoh_nilai
+sesudah,brands,brand_id,9,0,0.0,9,1,9,1
+sesudah,brands,brand_name,9,0,0.0,9,,,Electra
+sesudah,categories,category_id,7,0,0.0,7,1,7,1
+sesudah,categories,category_name,7,0,0.0,7,,,Children Bicycles
+sesudah,customers,customer_id,1445,0,0.0,1445,1,1445,1
+sesudah,customers,first_name,1445,0,0.0,1265,,,Debra
+sesudah,customers,last_name,1445,0,0.0,753,,,Burks
+sesudah,customers,phone,1445,0,0.0,179,,,Tidak diketahui
+sesudah,customers,email,1445,0,0.0,1445,,,debra.burks@yahoo.com
+sesudah,customers,street,1445,0,0.0,1445,,,9273 Thorne Ave.
+sesudah,customers,city,1445,0,0.0,195,,,Orchard Park
+sesudah,customers,state,1445,0,0.0,3,,,NY
+sesudah,customers,zip_code,1445,0,0.0,195,10002,95993,14127
+sesudah,order_items,order_id,4722,0,0.0,1615,1,1615,1
+sesudah,order_items,item_id,4722,0,0.0,5,1,5,1
+sesudah,order_items,product_id,4722,0,0.0,307,2,315,20
+sesudah,order_items,quantity,4722,0,0.0,2,1,2,1
+sesudah,order_items,list_price,4722,0,0.0,104,89.99,11999.99,599.99
+sesudah,order_items,discount,4722,0,0.0,4,0.05,0.2,0.2
+sesudah,order_items,nilai_kotor,4722,0,0.0,200,89.99,23999.98,599.99
+sesudah,order_items,nilai_diskon,4722,0,0.0,390,5.5,2400.0,120.0
+sesudah,order_items,nilai_bersih,4722,0,0.0,638,71.99,21599.98,479.99
+sesudah,orders,order_id,1615,0,0.0,1615,1,1615,1
+sesudah,orders,customer_id,1615,0,0.0,1445,1,1445,259
+sesudah,orders,order_status,1615,0,0.0,4,1,4,4
+sesudah,orders,order_date,1615,0,0.0,725,2016-01-01,2018-12-28,2016-01-01 00:00:00
+sesudah,orders,required_date,1615,0,0.0,734,2016-01-03,2018-12-28,2016-01-03 00:00:00
+sesudah,orders,shipped_date,1615,170,10.53,675,2016-01-03,2018-04-02,2016-01-03 00:00:00
+sesudah,orders,store_id,1615,0,0.0,3,1,3,1
+sesudah,orders,staff_id,1615,0,0.0,6,2,9,2
+sesudah,products,product_id,321,0,0.0,321,1,321,1
+sesudah,products,product_name,321,0,0.0,291,,,Trek 820 - 2016
+sesudah,products,brand_id,321,0,0.0,9,1,9,9
+sesudah,products,category_id,321,0,0.0,7,1,7,6
+sesudah,products,model_year,321,0,0.0,4,2016,2019,2016
+sesudah,products,list_price,321,0,0.0,106,89.99,11999.99,379.99
+sesudah,staffs,staff_id,10,0,0.0,10,1,10,1
+sesudah,staffs,first_name,10,0,0.0,10,,,Fabiola
+sesudah,staffs,last_name,10,0,0.0,10,,,Jackson
+sesudah,staffs,email,10,0,0.0,10,,,fabiola.jackson@bikes.shop
+sesudah,staffs,phone,10,0,0.0,10,,,(831) 555-5554
+sesudah,staffs,active,10,0,0.0,1,1,1,1
+sesudah,staffs,store_id,10,0,0.0,3,1,3,1
+sesudah,staffs,manager_id,10,1,10.0,4,1,7,1
+sesudah,stocks,store_id,939,0,0.0,3,1,3,1
+sesudah,stocks,product_id,939,0,0.0,313,1,313,1
+sesudah,stocks,quantity,939,0,0.0,31,0,30,27
+sesudah,stores,store_id,3,0,0.0,3,1,3,1
+sesudah,stores,store_name,3,0,0.0,3,,,Santa Cruz Bikes
+sesudah,stores,phone,3,0,0.0,3,,,(831) 476-4321
+sesudah,stores,email,3,0,0.0,3,,,santacruz@bikes.shop
+sesudah,stores,street,3,0,0.0,3,,,3700 Portola Drive
+sesudah,stores,city,3,0,0.0,3,,,Santa Cruz
+sesudah,stores,state,3,0,0.0,3,,,CA
+sesudah,stores,zip_code,3,0,0.0,3,11432,95060,95060

@@ -1,0 +1,129 @@
+﻿tabel,karakteristik,aturan,prioritas,baris_dicek,baris_bermasalah,tindakan
+brands,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,9,0,-
+brands,Data Type,brand_id harus berupa angka bulat,Tinggi,9,0,-
+brands,Completeness,brand_id wajib terisi,Tinggi,9,0,-
+brands,Completeness,brand_name wajib terisi,Tinggi,9,0,-
+brands,Duplication,Duplikat brand_id,Tinggi,9,0,-
+brands,Consistency,Penulisan brand_name (Title Case),Rendah,9,0,-
+categories,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,7,0,-
+categories,Data Type,category_id harus berupa angka bulat,Tinggi,7,0,-
+categories,Completeness,category_id wajib terisi,Tinggi,7,0,-
+categories,Completeness,category_name wajib terisi,Tinggi,7,0,-
+categories,Duplication,Duplikat category_id,Tinggi,7,0,-
+categories,Consistency,Penulisan category_name (Title Case),Rendah,7,0,-
+stores,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,3,0,-
+stores,Data Type,store_id harus berupa angka bulat,Tinggi,3,0,-
+stores,Completeness,store_id wajib terisi,Tinggi,3,0,-
+stores,Completeness,store_name wajib terisi,Tinggi,3,0,-
+stores,Duplication,Duplikat store_id,Tinggi,3,0,-
+stores,Consistency,Penulisan store_name (Title Case),Rendah,3,0,-
+stores,Consistency,Penulisan city (Title Case),Rendah,3,0,-
+stores,Consistency,Kode state huruf besar,Rendah,3,0,-
+stores,Consistency,Email huruf kecil,Rendah,3,0,-
+stores,Consistency,zip_code 5 digit (teks),Rendah,3,0,-
+stores,Completeness,Nilai kosong pada phone,Rendah,3,0,-
+stores,Completeness,Nilai kosong pada email,Rendah,3,0,-
+customers,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,1445,1445,Dirapikan
+customers,Data Type,customer_id harus berupa angka bulat,Tinggi,1445,0,-
+customers,Completeness,customer_id wajib terisi,Tinggi,1445,0,-
+customers,Completeness,first_name wajib terisi,Tinggi,1445,0,-
+customers,Completeness,last_name wajib terisi,Tinggi,1445,0,-
+customers,Duplication,Duplikat customer_id,Tinggi,1445,0,-
+customers,Consistency,Penulisan first_name (Title Case),Rendah,1445,0,-
+customers,Consistency,Penulisan last_name (Title Case),Rendah,1445,10,Distandarkan
+customers,Consistency,Penulisan city (Title Case),Rendah,1445,0,-
+customers,Consistency,Email huruf kecil,Rendah,1445,0,-
+customers,Consistency,Kode state huruf besar,Rendah,1445,0,-
+customers,Consistency,zip_code 5 digit (teks),Rendah,1445,0,-
+customers,Accuracy,Format email tidak valid,Rendah,1445,10,Hanya ditandai
+customers,Domain integrity,state harus 2 huruf,Rendah,1445,0,-
+customers,Consistency,Satu kota berada di lebih dari satu state,Menengah,1445,0,-
+customers,Duplication,Kemungkinan pelanggan ganda (nama+email sama),Menengah,1445,0,-
+customers,Completeness,Nilai kosong pada phone,Rendah,1445,1267,phone diisi 'Tidak diketahui'; lainnya dibiarkan NULL
+customers,Completeness,Nilai kosong pada email,Rendah,1445,0,-
+customers,Completeness,Nilai kosong pada street,Rendah,1445,0,-
+products,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,321,0,-
+products,Data Type,product_id harus berupa angka bulat,Tinggi,321,0,-
+products,Data Type,brand_id harus berupa angka bulat,Tinggi,321,0,-
+products,Data Type,category_id harus berupa angka bulat,Tinggi,321,0,-
+products,Data Type,model_year harus berupa angka bulat,Tinggi,321,0,-
+products,Data Type,list_price harus berupa angka,Tinggi,321,0,-
+products,Completeness,product_id wajib terisi,Tinggi,321,0,-
+products,Completeness,product_name wajib terisi,Tinggi,321,0,-
+products,Completeness,brand_id wajib terisi,Tinggi,321,0,-
+products,Completeness,category_id wajib terisi,Tinggi,321,0,-
+products,Completeness,list_price wajib terisi,Tinggi,321,0,-
+products,Duplication,Duplikat product_id,Tinggi,321,0,-
+products,Domain integrity,list_price harus lebih dari 0,Tinggi,321,0,-
+products,Domain integrity,model_year harus 2000-2027,Menengah,321,0,-
+products,Integritas referensial,brand_id harus ada di brands,Tinggi,321,0,-
+products,Integritas referensial,category_id harus ada di categories,Tinggi,321,0,-
+products,Duplication,Nama produk kembar,Menengah,321,59,Hanya ditandai
+staffs,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,10,0,-
+staffs,Data Type,staff_id harus berupa angka bulat,Rendah,10,0,-
+staffs,Data Type,store_id harus berupa angka bulat,Rendah,10,0,-
+staffs,Data Type,manager_id harus berupa angka bulat,Rendah,10,0,-
+staffs,Data Type,active harus berupa angka bulat,Rendah,10,0,-
+staffs,Completeness,staff_id wajib terisi,Tinggi,10,0,-
+staffs,Duplication,Duplikat staff_id,Tinggi,10,0,-
+staffs,Consistency,Penulisan first_name (Title Case),Rendah,10,0,-
+staffs,Consistency,Penulisan last_name (Title Case),Rendah,10,0,-
+staffs,Consistency,Email huruf kecil,Rendah,10,0,-
+staffs,Domain integrity,active harus 0 atau 1,Rendah,10,0,-
+staffs,Integritas referensial,store_id harus ada di stores,Rendah,10,0,-
+staffs,Integritas referensial,manager_id harus ada di staffs,Rendah,10,0,-
+orders,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,1615,0,-
+orders,Data Type,order_id harus berupa angka bulat,Tinggi,1615,0,-
+orders,Data Type,customer_id harus berupa angka bulat,Tinggi,1615,0,-
+orders,Data Type,order_status harus berupa angka bulat,Tinggi,1615,0,-
+orders,Data Type,store_id harus berupa angka bulat,Tinggi,1615,0,-
+orders,Data Type,staff_id harus berupa angka bulat,Tinggi,1615,0,-
+orders,Data Type,order_date harus tanggal valid,Menengah,1615,0,-
+orders,Data Type,required_date harus tanggal valid,Menengah,1615,0,-
+orders,Data Type,shipped_date harus tanggal valid,Menengah,1615,0,-
+orders,Completeness,order_id wajib terisi,Tinggi,1615,0,-
+orders,Completeness,customer_id wajib terisi,Tinggi,1615,0,-
+orders,Completeness,order_status wajib terisi,Tinggi,1615,0,-
+orders,Completeness,order_date wajib terisi,Tinggi,1615,0,-
+orders,Completeness,store_id wajib terisi,Tinggi,1615,0,-
+orders,Duplication,Duplikat order_id,Tinggi,1615,0,-
+orders,Domain integrity,order_status harus 1-4,Tinggi,1615,0,-
+orders,Business rule,required_date tidak boleh sebelum order_date,Menengah,1615,0,-
+orders,Business rule,shipped_date tidak boleh sebelum order_date,Menengah,1615,0,-
+orders,Business rule,Order Completed wajib punya shipped_date,Tinggi,1615,0,-
+orders,Business rule,Order non-Completed tetapi punya shipped_date,Menengah,1615,0,-
+orders,Integritas referensial,store_id harus ada di stores,Tinggi,1615,0,-
+orders,Integritas referensial,customer_id harus ada di customers,Menengah,1615,0,-
+orders,Integritas referensial,staff_id harus ada di staffs,Rendah,1615,0,-
+order_items,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,4722,0,-
+order_items,Data Type,order_id harus berupa angka bulat,Tinggi,4722,0,-
+order_items,Data Type,item_id harus berupa angka bulat,Tinggi,4722,0,-
+order_items,Data Type,product_id harus berupa angka bulat,Tinggi,4722,0,-
+order_items,Data Type,quantity harus berupa angka bulat,Tinggi,4722,0,-
+order_items,Data Type,list_price harus berupa angka,Tinggi,4722,0,-
+order_items,Data Type,discount harus berupa angka,Tinggi,4722,0,-
+order_items,Completeness,order_id wajib terisi,Tinggi,4722,0,-
+order_items,Completeness,item_id wajib terisi,Tinggi,4722,0,-
+order_items,Completeness,product_id wajib terisi,Tinggi,4722,0,-
+order_items,Completeness,quantity wajib terisi,Tinggi,4722,0,-
+order_items,Completeness,list_price wajib terisi,Tinggi,4722,0,-
+order_items,Completeness,Nilai kosong pada discount,Tinggi,4722,0,-
+order_items,Duplication,"Duplikat (order_id, item_id)",Tinggi,4722,0,-
+order_items,Domain integrity,quantity harus lebih dari 0,Tinggi,4722,0,-
+order_items,Domain integrity,list_price harus lebih dari 0,Tinggi,4722,0,-
+order_items,Domain integrity,discount harus 0 sampai 1,Tinggi,4722,0,-
+order_items,Integritas referensial,order_id harus ada di orders (bersih),Tinggi,4722,0,-
+order_items,Integritas referensial,product_id harus ada di products (bersih),Tinggi,4722,0,-
+order_items,Data Anomaly,Outlier list_price (IQR x3),Menengah,4722,212,Hanya ditandai
+order_items,Data Anomaly,Outlier quantity (IQR x3),Menengah,4722,0,-
+stocks,Consistency,Spasi berlebih di awal/akhir/tengah teks,Rendah,939,0,-
+stocks,Data Type,store_id harus berupa angka bulat,Tinggi,939,0,-
+stocks,Data Type,product_id harus berupa angka bulat,Tinggi,939,0,-
+stocks,Data Type,quantity harus berupa angka bulat,Tinggi,939,0,-
+stocks,Completeness,store_id wajib terisi,Tinggi,939,0,-
+stocks,Completeness,product_id wajib terisi,Tinggi,939,0,-
+stocks,Completeness,quantity wajib terisi,Tinggi,939,0,-
+stocks,Duplication,"Duplikat (store_id, product_id)",Tinggi,939,0,-
+stocks,Domain integrity,quantity stok tidak boleh negatif,Tinggi,939,0,-
+stocks,Integritas referensial,store_id harus ada di stores (bersih),Tinggi,939,0,-
+stocks,Integritas referensial,product_id harus ada di products (bersih),Tinggi,939,0,-
